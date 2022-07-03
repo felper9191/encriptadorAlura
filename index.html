@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Encriptador</title>
+    <meta http-equiv="Content-Type" content="text/html; charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <!--custom css-->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="cabecalho">
+            <h1 class="tituloPrincipal">Encriptador Alura</h1>
+    </header>
+    
+    <main class="conteudo">
+                
+        <h2 class="solicitaDigitar">Digite no campo à esquerda um texto para ser codificado ou decodificado...</h2>
+
+        <div class="campos">
+
+            <textarea class="campo" name="campo" id="campo" rows="10" cols="40" placeholder = "Digite aqui"></textarea>
+
+            <textarea class="campo" name="resultado" id="resultado" rows="10" cols="40" placeholder="Resultado aqui"></textarea>
+
+        </div>
+
+        <div class="botoes">
+
+            <button class="botao" id ="botaoCod" onclick="codifica()">Codificar</button>
+            
+            <button class="botao" id ="botaoCopy" onclick="copiaTexto()">Copiar</button>
+
+            <button class="botao" id ="botaoDecod" onclick="decodifica()">Decodificar</button>
+
+        </div>
+        
+    </main>
+    
+    <footer class="rodape">
+        <p class="mensagem">Acesse o site da&nbsp;</p>
+        <a href="https://www.alura.com.br/" class="rodape__linkAlura">Alura</a>
+    </footer>
+   
+<!--main js-->
+<script src="script.js"></script>
+</body>
+</html>

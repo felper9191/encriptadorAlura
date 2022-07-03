@@ -1,0 +1,141 @@
+body {
+    background: #cdcdcd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: calibri, sans-serif;
+}
+
+#cabecalho {
+    width: 100%;
+    background: #555555;
+    padding: 1rem 0;
+}
+
+.conteudo {
+    width: 100%;
+}
+
+.tituloPrincipal {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+}
+
+.solicitaDigitar {
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.campos {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.botoes {
+    width: 100%;
+    display: flex;
+}
+
+.campo {
+    width: 50%;  
+}
+
+.botao {
+    background: #25b525;
+    border: none;
+    border-radius: 5px; 
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #086608;
+}
+
+.rodape {
+    background: #555555;
+    display: flex;
+    padding: 1rem 0;
+    width: 100%;
+    height: 3rem;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape .rodape__linkAlura {
+    text-decoration: underline;
+    color: #0000ff;
+}
+
+/*Responsividade*/
+
+@media screen and (min-width: 0){
+    .conteudo {
+       height: calc(80vh);
+       margin-bottom: 1rem;
+    }
+    
+    .tituloPrincipal {
+       font-size: 2rem;
+    }
+    
+    .solicitaDigitar {
+        font-size: 1rem;
+    }
+    
+    .campo {
+        font-size: 1.3rem;
+        padding: 0.3rem;
+        margin: 0 0.1rem;
+    }
+    
+    .botoes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .botao {
+        padding: 0.5rem;
+        font-size: 1.25rem;
+        width: 10rem;
+        margin: 0.25rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .conteudo {
+       height: calc(100vh - 11rem);
+       margin-bottom: 0;
+    }
+    
+    .tituloPrincipal {
+       font-size: 4rem;
+    }
+    
+    .solicitaDigitar {
+        font-size: 2.3rem;
+    }
+    
+    .campo {
+        font-size: 1.5rem;
+        padding: 1rem;
+        margin: 0 1rem;
+    }
+    
+    .botoes {
+        justify-content: space-around;
+    }
+    
+    .botao {
+        padding: 0.75rem;
+        font-size: 1.5rem;
+        width: 15rem;
+        margin: 1rem;
+    }
+}
+
